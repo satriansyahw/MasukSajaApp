@@ -1,0 +1,15 @@
+C:\Users\ThinkPad T470s\source\repos\JustLoginFizzBuzzApp\bin\Debug\net6.0\JustLoginFizzBuzzApp.exe
+C:\Users\ThinkPad T470s\source\repos\JustLoginFizzBuzzApp\bin\Debug\net6.0\JustLoginFizzBuzzApp.deps.json
+C:\Users\ThinkPad T470s\source\repos\JustLoginFizzBuzzApp\bin\Debug\net6.0\JustLoginFizzBuzzApp.runtimeconfig.json
+C:\Users\ThinkPad T470s\source\repos\JustLoginFizzBuzzApp\bin\Debug\net6.0\JustLoginFizzBuzzApp.dll
+C:\Users\ThinkPad T470s\source\repos\JustLoginFizzBuzzApp\bin\Debug\net6.0\JustLoginFizzBuzzApp.pdb
+C:\Users\ThinkPad T470s\source\repos\JustLoginFizzBuzzApp\obj\Debug\net6.0\JustLoginFizzBuzzApp.csproj.AssemblyReference.cache
+C:\Users\ThinkPad T470s\source\repos\JustLoginFizzBuzzApp\obj\Debug\net6.0\JustLoginFizzBuzzApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ThinkPad T470s\source\repos\JustLoginFizzBuzzApp\obj\Debug\net6.0\JustLoginFizzBuzzApp.AssemblyInfoInputs.cache
+C:\Users\ThinkPad T470s\source\repos\JustLoginFizzBuzzApp\obj\Debug\net6.0\JustLoginFizzBuzzApp.AssemblyInfo.cs
+C:\Users\ThinkPad T470s\source\repos\JustLoginFizzBuzzApp\obj\Debug\net6.0\JustLoginFizzBuzzApp.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPad T470s\source\repos\JustLoginFizzBuzzApp\obj\Debug\net6.0\JustLoginFizzBuzzApp.dll
+C:\Users\ThinkPad T470s\source\repos\JustLoginFizzBuzzApp\obj\Debug\net6.0\refint\JustLoginFizzBuzzApp.dll
+C:\Users\ThinkPad T470s\source\repos\JustLoginFizzBuzzApp\obj\Debug\net6.0\JustLoginFizzBuzzApp.pdb
+C:\Users\ThinkPad T470s\source\repos\JustLoginFizzBuzzApp\obj\Debug\net6.0\JustLoginFizzBuzzApp.genruntimeconfig.cache
+C:\Users\ThinkPad T470s\source\repos\JustLoginFizzBuzzApp\obj\Debug\net6.0\ref\JustLoginFizzBuzzApp.dll
