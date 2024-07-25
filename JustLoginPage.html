@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive List</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        li:hover {
+            background-color: lightgray;
+        }
+        li.bold {
+            font-weight: bold;
+        }
+ #customAlert {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ccc;
+            z-index: 1000;
+            text-align: center;
+            width: 300px;
+            border-radius: 10px;
+        }
+        #customAlert button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #customAlert button:hover {
+            background-color: #0056b3;
+        }
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 500;
+        }
+    </style>
+</head>
+<body>
+    <ul id="dataList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+    <div id="overlay" onclick="closeAlert()"></div>
+    <div id="customAlert">
+        <p id="alertContent"></p>
+        <button onclick="closeAlert()">OK</button>
+    </div>
+    <script>
+        function initializeList() {
+            const items = document.querySelectorAll('#dataList li');
+            let selectedItem = null;
+
+            items.forEach(item => {
+                item.addEventListener('click', () => {
+                    showAlert(item.textContent);
+
+                    if (selectedItem) {
+                        selectedItem.classList.remove('bold');
+                    }
+
+                    item.classList.add('bold');
+                    selectedItem = item;
+                });
+
+                item.addEventListener('mouseover', () => {
+                    item.style.backgroundColor = 'lightgray';
+                });
+
+                item.addEventListener('mouseout', () => {
+                        item.style.backgroundColor = '';
+                });
+            });
+        }
+ 	function showAlert(message) {
+            document.getElementById('alertContent').textContent = 'You clicked : ' + message;
+            document.getElementById('customAlert').style.display = 'block';
+            document.getElementById('overlay').style.display = 'block';
+        }
+
+        function closeAlert() {
+            document.getElementById('customAlert').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+        }
+        document.addEventListener('DOMContentLoaded', initializeList);
+    </script>
+</body>
+</html>
